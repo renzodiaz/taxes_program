@@ -34,6 +34,28 @@ input = [
 calculator.process_input(input)
 puts calculator.generate_receipt
 ```
+## Project Structure
+
+```
+sales-tax-calculator/
+├── app/
+│   ├── models/
+│   │   ├── product.rb
+│   │   └── receipt.rb
+│   ├── services/
+│   │   └── tax_generator.rb
+│   ├── factories/
+│   │   └── product_factory.rb
+│   └── main.rb
+├── spec/
+│   ├── models/
+│   ├── services/
+│   ├── factories/
+│   └── spec_helper.rb
+├── Gemfile
+└── README.md
+```
+
 ## Design Patterns Used
 
 - **Factory Pattern**: `ProductFactory` creates `Product` objects from input strings
